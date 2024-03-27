@@ -1,4 +1,4 @@
-# AccuknoxSocial
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/72d8e21c-13da-440e-acfa-294e40630617)# AccuknoxSocial
 
 ## Let's get started
 This is a social media application(Backend) built with Django and Django Rest Framework
@@ -27,7 +27,8 @@ If you do not have Docker installed you can run the same in your local system wi
   DB_HOST = localhost
   DB_PORT = 5432
   ```
-  
+
+
 - Also, Create a new DB for the same.
 - Run the migrations command
   ```python manage.py makemigrations```
@@ -39,16 +40,19 @@ With Docker installed
 - Create the Build: ```docker compose build```
 - Run: ```docker compose up```
 - Open Docker Desktop and look for the running service under db you will see the container ID copy that and Go to your Terminal and hit command: ```docker inspect <container_id>``` (Replace <container_id> with the Container ID you have copied and scroll down to fetch the IP Address.
-  <img width="1440" alt="Screenshot 2023-08-28 at 2 49 16 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/b2c8c1b9-8022-43d7-bf04-0c8fcb6bf4a6">
-  <img width="1044" alt="Screenshot 2023-08-28 at 2 54 14 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/f196e163-e502-4bc8-bd02-a5b9dcf78d36">
+  <img width="1440" alt="263660083-b2c8c1b9-8022-43d7-bf04-0c8fcb6bf4a6" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/1191a3ab-94ed-4690-a088-91725f95f5f5">
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/35ab46a0-e270-4006-80b3-4cdcf2b38181)
 
 
 - Now Open your Browser and go to [localhost:5050](http://localhost:5050/) and login wiht the credentials mentioned under pgadmin section of the docker-compose.yml file and create a new connection with the details mentioned under the db section of the docker-compose.yml file and in the host name enter the IP Address you fetched
-  <img width="1440" alt="Screenshot 2023-08-28 at 2 59 12 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/0a680f10-2cb8-46e5-8846-00b269099f94">
-  <img width="1440" alt="Screenshot 2023-08-28 at 2 59 17 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/860c2082-e072-4f5b-9294-9b3470298ff1">
+ ![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/5322649e-8446-422e-b5e4-e962d2b3ad85)
+
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/a08b0c70-d1bf-406d-a826-1e27b80aa46d)
+
 
  - You can see all the tables populated during migration
-  <img width="1440" alt="Screenshot 2023-08-28 at 3 01 56 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/0fc8d5cc-f847-4b83-871e-1391166248cc">
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/c2f412fb-f077-485d-a568-d96e16e5f6b0)
+
 
 Once you see the app is up and running you can play along with it.
 
@@ -58,53 +62,66 @@ Once you see the app is up and running you can play along with it.
 
 ## Functionalities
 1) Sign Up
-<img width="1440" alt="Screenshot 2023-08-27 at 11 31 15 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/92fa9914-bd77-438c-a7c6-e8da084506a4">
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/56b4d2c3-dec5-444b-84fe-f0a8391678f2)
+
 
 2) Login
-<img width="1440" alt="Screenshot 2023-08-27 at 11 35 47 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/9900259a-2184-4dd4-9768-afd291bf6801">
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/fb3640e8-03ce-49db-86cc-e0b2fa70ba7c)
+
 
 Once you login with the right credentials(case insentivity handled)
 A Token will be generated and that token needs to be added to the Headers Section
 with key as ```Authorization``` value as ```token <token>```
 This ensures the user is authenticated and only Authenticated users can access the APIs below.
 
-<img width="1319" alt="Screenshot 2023-08-27 at 11 39 07 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/5674d15e-8a40-4541-821c-17c376c666b4">
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/6060560c-22dc-4047-9a89-88f65be97ed0)
+
 
 3) Log Out
-<img width="1440" alt="Screenshot 2023-08-27 at 11 48 16 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/52133c7e-55af-4a64-a7e9-7e955e303a52">
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/a83f5d40-fb03-458b-b47e-f8456cff231c)
+
 
 
 4) Add Friend
 After loading a number of users you can also send friend requests to them and add them to your friends list subject to acceptance of your friend request by the recipient.
 Cannot send more than 3 requests per minute
-<img width="1440" alt="Screenshot 2023-08-27 at 11 46 02 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/d877db5a-9a28-45b1-92a7-cb419f8c923f">
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/33529d15-bc66-48ae-8876-9fd5ce1b89bf)
+
 
 
 6) Pending Friend Requests
-   <img width="1440" alt="Screenshot 2023-08-27 at 11 58 13 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/8a54a99d-7288-4240-95ca-e2fb90463a40">
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/427c774a-92ea-4114-870a-ac5dc7bcf393)
+
 
    - Accept Friend Request
-   <img width="1440" alt="Screenshot 2023-08-27 at 11 57 26 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/6cd4e958-e705-47f7-b565-106c1a8290cf">
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/5152a5e2-73a3-4ff1-9d41-9faadde7602c)
+
 
    - Reject Friend Request
-   <img width="1440" alt="Screenshot 2023-08-28 at 12 01 55 AM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/d6d117c9-02d6-427f-bb04-963159c528e2">
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/ed69e69d-aa3f-4aa6-ac7b-a81bde9dbbb4)
+
 
    - Unauthorized Action
-   <img width="1440" alt="Screenshot 2023-08-27 at 11 59 29 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/dd2e7fd3-ca35-4551-9637-82e110fe2fd7">
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/c64fcc2e-3d04-417e-9822-55d29856096a)
+
 
 7) View Your Friends (Pagination Applied)
-<img width="1440" alt="Screenshot 2023-08-27 at 11 59 29 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/8d6266da-2bba-4d2a-ba8e-656e727ccfc0">
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/6848b9cd-5a70-40fd-8373-82d0499a59ca)
+
 
 8) View All Users and Search for Users
   - All Users
-  <img width="1440" alt="Screenshot 2023-08-27 at 11 51 46 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/969efbd4-abf0-4798-bed4-bf86a35c8c8e">
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/3a3bdf72-be48-480e-92fa-3fad48e5eee5)
+
 
   - Search Users
     - Search users containing a specific letter like 'j'
-    <img width="1440" alt="Screenshot 2023-08-27 at 11 52 22 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/4509803b-4516-4efd-9190-a03f46c9916b">
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/99dba6ab-2f84-46ff-8202-73da875de3cb)
+
 
     - Search with user's email (case insensitive)
-    <img width="1440" alt="Screenshot 2023-08-27 at 11 52 46 PM" src="https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/31877827/ef766f3b-cebd-4811-9479-20c52253e0ef">
+![image](https://github.com/kumbhani11/Accuknox-Django-Assignment/assets/51017576/ab0accef-13c0-403f-a807-68c79290bd8d)
+
 
     
 
